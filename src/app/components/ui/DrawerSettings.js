@@ -18,9 +18,9 @@ const DrawerSettings = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="menu p-4 w-80 min-h-full bg-white text-base-content rounded-l-2xl">
           {/* Sidebar content here */}
-          <h2 className="font-bold text-center text-xl pt-10">Settings</h2>
+          <h2 className=" text-center text-xl pt-10">Settings</h2>
           <OptionsSetting/>
         </ul>
       </div>

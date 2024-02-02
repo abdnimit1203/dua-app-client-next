@@ -9,7 +9,7 @@ import OptionsSetting from "../ui/OptionsSetting";
 const Settings = () => {
   return (
     <div className="flex flex-col justify-start items-end ">
-      <div className="h-24 w-fit flex items-center">
+      <div className="pb-5 w-fit flex items-center">
         <div className="dropdown dropdown-bottom dropdown-end">
           <div tabIndex={0} role="button" className=" m-1">
             <Image src={profile} alt="logo" width={45} height={45}></Image>
@@ -35,11 +35,11 @@ const Settings = () => {
             </li>
           </ul>
         </div>
-        <div className="block xl:hidden">
+        <div className="block 2xl:hidden">
             <DrawerSettings/>
         </div>
       </div>
-      <div className="bg-white rounded-2xl px-2 py-10 flex-1 items-center text-center gap-6 hidden xl:block">
+      <div className="bg-white rounded-2xl px-2 py-10 flex-1 items-center text-center gap-6 hidden 2xl:block">
         <h2 className="font-bold ">Settings</h2>
         <OptionsSetting/>
       </div>

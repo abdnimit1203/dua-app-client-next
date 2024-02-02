@@ -40,9 +40,9 @@ const OptionsSetting = () => {
             <span>Appearance Settings</span>
 
           </div>
-          <div className="flex justify-between border p-6">
+          <div className="flex justify-between border p-6 ">
             <p>Night Mode</p>
-            <input type="checkbox" className="toggle" checked />
+            <input type="checkbox" className="toggle"  />
           </div>
         </div>
     );

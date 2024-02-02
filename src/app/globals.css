@@ -41,3 +41,32 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #15751d;
   }
+
+  /* steps subcategory*/
+  .steps .step:after {
+    content: ""!important;
+    counter-increment: step;
+    z-index: 1;
+    position: relative;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: grid;
+    height: 0.5rem;
+    width: 0.5rem;
+    place-items: center;
+    place-self: center;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: #1FA45B;
+    
+}
+
+.steps-vertical .step:before {
+  height: 100%;
+  width: 0.18rem;
+  background: #1faf2b8c;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+ 
+  margin-inline-start: 50%;
+}

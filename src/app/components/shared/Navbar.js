@@ -11,18 +11,18 @@ import { BiDonateHeart } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="bg-white rounded-2xl px-2 py-10">
-      <div className="flex flex-col justify-between items-center min-h-screen">
+    <div className="bg-white rounded-2xl px-2 py-10 min-h-40">
+      <div className="flex flex-col justify-between items-center gap-6 min-h-[80vh] ">
         <div><Image src={logo} alt="logo" width={73} height={73}></Image>
       </div>
         <div className="space-y-4">
-        <Image src={home} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
-        <Image src={allduas} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
-        <Image src={memorise} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
-        <Image src={bookmark} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
-        <Image src={ruqyah} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
-        <Image src={qa} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
-        <Image src={book} alt="logo" width={38} height={38} className="rounded-full border-2 border-black cursor-pointer"></Image>
+        <Image src={home} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
+        <Image src={allduas} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
+        <Image src={memorise} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
+        <Image src={bookmark} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
+        <Image src={ruqyah} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
+        <Image src={qa} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
+        <Image src={book} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>
         </div>
         <div className="rounded-md main-bg p-3">
       <BiDonateHeart className="text-3xl main-bg text-white " />

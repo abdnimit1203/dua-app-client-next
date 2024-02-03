@@ -12,8 +12,8 @@ const CategoryList = async () => {
     // const [search,setSearch] = useState("")
     // console.log(search);
   return (
-    <div className="overflow-y-scroll max-h-[80vh] rounded-b-xl">
-      <h2 className="main-bg rounded-t-xl text-white font-semibold text-center py-3">
+    <div className=" max-h-[80vh] rounded-b-xl">
+      <h2 className="main-bg rounded-t-xl text-white font-semibold md:text-lg text-center py-5">
         Categories
       </h2>
       <div className=" bg-white p-4 rounded-b-xl ">
@@ -48,21 +48,24 @@ const CategoryList = async () => {
             type="text"
             id="Search"
         //    onChange={(e)=> {setSearch(e.target.value)}}
-            placeholder="Search for..."
+            placeholder="Search by Category..."
             className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm border my-4 pl-10 md:pl-[10%] focus:outline-green-300"
           />
 
          
         </form>
 {/* Search button ends */}
+<div className="overflow-y-scroll px-2 max-h-[80vh]">
+
 
         {data.map((category) => (
-         <Link href={`/categories/dua?cat_id=${category.cat_id}`}>
+        
 
             <div className="collapse mb-3" key={category?.id}>
               <input type="radio" name="my-accordion-1"  />
 
               <div className="flex  bg-slate-100 px-2 py-4 rounded-xl justify-between collapse-title">
+              <Link href={`/categories/dua?cat_id=${category.cat_id}`}>
                 <div className="flex gap-4  items-center">
                   <div className="">
                     <Image
@@ -83,7 +86,7 @@ const CategoryList = async () => {
                     </p>
                   </div>
                 </div>
-
+</Link>
                 <div className="">
                   <p className="font-bold ">{category?.no_of_dua}</p>
                   <p className="text-gray-400">Duas</p>
@@ -100,8 +103,9 @@ const CategoryList = async () => {
                 </ul>
               </div>
             </div>
-            </Link>
+           
         ))}
+        </div>
       </div>
     </div>
   );

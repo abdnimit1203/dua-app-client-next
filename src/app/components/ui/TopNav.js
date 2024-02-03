@@ -33,8 +33,8 @@ const TopNav = () => {
             type="text"
             id="Search"
         //    onChange={(e)=> {setSearch(e.target.value)}}
-            placeholder="Search for..."
-            className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm border my-4 pl-10 md:pl-[10%] focus:outline-green-300"
+            placeholder="Search by Dua Name..."
+            className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm border my-4 pl-10 md:pl-[20%] focus:outline-green-300"
           />
 
          

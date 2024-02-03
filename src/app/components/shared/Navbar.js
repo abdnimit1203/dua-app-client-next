@@ -11,9 +11,9 @@ import { BiDonateHeart } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="bg-white rounded-2xl px-2 py-10 min-h-40">
-      <div className="flex flex-col justify-between items-center gap-6 min-h-[80vh] ">
-        <div><Image src={logo} alt="logo" width={73} height={73}></Image>
+    <div className="bg-white rounded-2xl px-2 lg:px-4 py-10 h-[80vh] overflow-y-auto">
+      <div className="flex flex-col justify-between items-center gap-6 min-h-[100vh] ">
+        <div><Image src={logo} alt="logo" width={50} height={50}></Image>
       </div>
         <div className="space-y-4">
         <Image src={home} alt="logo" width={38} height={38} className="rounded-full  cursor-pointer"></Image>

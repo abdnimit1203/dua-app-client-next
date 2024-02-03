@@ -1,7 +1,9 @@
 import { getDuabySub } from "@/app/utils/getDuabySub";
-import Subcategory from "./../../components/ui/Subcategory";
-import DuaCard from "@/app/components/ui/DuaCard";
 
+import DuaCard from "@/app/components/ui/DuaCard";
+export function generateStaticParams() {
+  return [{ cat_id: 1 }, { cat_id: 2 }, { cat_id: 3 },{ cat_id: 4 }, { cat_id: 5 }, { cat_id: 6 },{ cat_id: 7 }, { cat_id: 8}, { cat_id: 9 },{ cat_id: 10 }];
+}
 const DuaPage = async ({ searchParams }) => {
   console.log(searchParams);
   const data = await getDuabySub(searchParams.cat_id);
@@ -12,12 +14,12 @@ const DuaPage = async ({ searchParams }) => {
       Total Dua: {data.length}
       <div>
         <div className="bg-white rounded-xl p-4 mb-4">
-          Section: The servant is dependent on his Lord
+          <span className="main-clr font-semibold">Section:</span> The servant
+          is dependent on his Lord
         </div>
-        {
-            data?.map(dua=> <DuaCard key={dua.id} dua={dua}/>)
-        }
-        
+        {data?.map((dua) => (
+          <DuaCard key={dua.id} dua={dua} />
+        ))}
       </div>
     </div>
   );

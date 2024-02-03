@@ -63,7 +63,7 @@ body{
 
 .steps-vertical .step:before {
   height: 100%;
-  width: 0.18rem;
+  width: 0.1rem;
   background: #1faf2b8c;
   --tw-translate-x: -50%;
   --tw-translate-y: -50%;

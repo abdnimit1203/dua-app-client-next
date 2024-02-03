@@ -1,10 +1,10 @@
 import { getDuabySub } from "@/app/utils/getDuabySub";
 
 import DuaCard from "@/app/components/ui/DuaCard";
-export function generateStaticParams() {
-  return [{ cat_id: 1 }, { cat_id: 2 }, { cat_id: 3 },{ cat_id: 4 }, { cat_id: 5 }, { cat_id: 6 },{ cat_id: 7 }, { cat_id: 8}, { cat_id: 9 },{ cat_id: 10 }];
-}
-const DuaPage = async ({ searchParams }) => {
+// export function generateStaticParams() {
+//   return [{ cat_id: 1 }, { cat_id: 2 }, { cat_id: 3 },{ cat_id: 4 }, { cat_id: 5 }, { cat_id: 6 },{ cat_id: 7 }, { cat_id: 8}, { cat_id: 9 },{ cat_id: 10 }];
+// }
+const DuaPage = async ({ params,searchParams }) => {
   console.log(searchParams);
   const data = await getDuabySub(searchParams.cat_id);
   return (
